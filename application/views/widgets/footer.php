@@ -1,7 +1,7 @@
-   <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+            </div>
+        </div>
+     <?=js("vendor/jquery")?>
+     <?=js("foundation")?>
+     <?=js("cms/akcms")?>
   </body>
 </html>

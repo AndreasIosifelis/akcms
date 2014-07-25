@@ -10,7 +10,7 @@ if(!function_exists("js")){
     
     function js($file){
         $file = ENVIRONMENT == 'development' ? $file.".js" : $file.".min.js";
-        return "<script src='".site_url("assets/js/{$file}")."'></script>";
+        return "<script src='".base_url("assets/js/{$file}")."'></script>";
     }
     
 }
@@ -20,7 +20,7 @@ if(!function_exists('css')){
     
     function css($file){
         $file = ENVIRONMENT == 'development' ? $file.".css" : $file.".min.css";
-        return "<link href='".site_url("assets/css/{$file}")."' rel='stylesheet' type='text/css' />";
+        return "<link href='".base_url("assets/css/{$file}")."' rel='stylesheet' type='text/css' />";
     }
     
 }
